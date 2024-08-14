@@ -21,11 +21,11 @@
           tabler-icons = pkgs.callPackage ({ lib, fetchzip, stdenvNoCC }:
             stdenvNoCC.mkDerivation rec {
               pname = "tabler-icons";
-              version = "3.4.0";
+              version = "3.12.0";
 
               src = fetchzip {
                 url = "https://github.com/tabler/tabler-icons/releases/download/v${version}/tabler-icons-${version}.zip";
-                sha256 = "sha256-1utVHJKpdfR5N8bPFv5gi1npPCM63s0ak4LLZ+ATQKE=";
+                sha256 = "sha256-e/ohEGufGebKR4FWDhuyg+KK7+mWByZBxOVmKMyTdS8=";
                 stripRoot = false;
               };
 
