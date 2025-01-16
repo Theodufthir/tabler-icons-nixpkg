@@ -21,11 +21,11 @@
           tabler-icons = pkgs.callPackage ({ lib, fetchzip, stdenvNoCC }:
             stdenvNoCC.mkDerivation rec {
               pname = "tabler-icons";
-              version = "3.12.0";
+              version = "3.28.1";
 
               src = fetchzip {
                 url = "https://github.com/tabler/tabler-icons/releases/download/v${version}/tabler-icons-${version}.zip";
-                sha256 = "sha256-e/ohEGufGebKR4FWDhuyg+KK7+mWByZBxOVmKMyTdS8=";
+                sha256 = "sha256-RPJAJcXou43aXNeJ8a+sT6fTQHaZpyM6SGZGvGfEmMc=";
                 stripRoot = false;
               };
 
@@ -41,7 +41,7 @@
               '';
 
               meta = with lib; {
-                description = "Tabler icons from in its webfont format";
+                description = "Tabler icons font";
                 longDescription = '''';
                 homepage = "https://tabler.io/icons";
                 license = licenses.mit;
